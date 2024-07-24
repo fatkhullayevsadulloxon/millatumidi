@@ -151,6 +151,7 @@ const Home = () => {
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
+              className="button-hamburger"
             >
               <img src={Menu} alt="" width={36} height={36} />
             </button>
