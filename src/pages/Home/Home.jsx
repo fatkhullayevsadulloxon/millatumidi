@@ -23,10 +23,10 @@ import Fakultet2 from "../../assets/images/fakultet/2.webp";
 import Fakultet3 from "../../assets/images/fakultet/3.webp";
 import Fakultet4 from "../../assets/images/fakultet/4.webp";
 
-import TeacherOne from "../../assets/images/teacher/one.webp";
-import TeacherTwo from "../../assets/images/teacher/two.webp";
-import TeacherTree from "../../assets/images/teacher/tree.webp";
-import TeacherFour from "../../assets/images/teacher/four.webp";
+import TeacherOne from "../../assets/images/teacher/one.png";
+import TeacherTwo from "../../assets/images/teacher/two.png";
+import TeacherTree from "../../assets/images/teacher/three.png";
+import TeacherFour from "../../assets/images/teacher/four.png";
 
 import Menu from "../../assets/images/meni.svg";
 
@@ -576,9 +576,11 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Ishmanova Dinara</p>
+                  <p className="teachers-name">Galina Pan</p>
+                  <p className="teachers-name" style={{opacity: '0%'}}>test</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">Doctor of Philosophy in Economical Science</p>
+                  <p className="teacher-skills">Dean of International
+                    business faculty</p>
                 </div>
 
                 <div className="teachers-item">
@@ -588,21 +590,10 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Murad Ismailov</p>
+                  <p className="teachers-name">Muhtor Bekmuratov</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">Dean of English Language Teaching Faculty</p>
-                </div>
-
-                <div className="teachers-item">
-                  <img
-                    src={TeacherTree}
-                    alt="Teacher-img"
-                    width={346}
-                    height={402}
-                  />
-                  <p className="teachers-name">Mr. Muhtor Bekmuratov</p>
-                  <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">Dean of Applied Accounting and Finance Faculty</p>
+                  <p className="teacher-skills">Dean of Accounting
+                    and Finance faculty</p>
                 </div>
 
                 <div className="teachers-item">
@@ -612,9 +603,23 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Prof. PhD Galina Pan </p>
+                  <p className="teachers-name">Muslimbek Pirnazarov</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">Dean of International Business Faculty</p>
+                  <p className="teacher-skills">Dean of
+                    Information Technologies faculty</p>
+                </div>
+
+                <div className="teachers-item">
+                  <img
+                    src={TeacherTree}
+                    alt="Teacher-img"
+                    width={346}
+                    height={402}
+                  />
+                  <p className="teachers-name">Murad Ismailov </p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">Dean of English Teaching
+                    faculty</p>
                 </div>
                 <div className="teachers-item">
                   <img
@@ -623,9 +628,11 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Muslimbek Pirnazarov</p>
+                  <p className="teachers-name">Galina Pan</p>
+                  <p className="teachers-name" style={{ opacity: '0%' }}>test</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">Dean of Information Technologies Faculty</p>
+                  <p className="teacher-skills">Dean of International
+                    business faculty</p>
                 </div>
 
                 <div className="teachers-item">
@@ -635,10 +642,36 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Ramziddin</p>
-                  <p className="teachers-lastname">Nurmahammatov</p>
+                  <p className="teachers-name">Muhtor Bekmuratov</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                  <p className="teacher-skills">Dean of Accounting
+                    and Finance faculty</p>
+                </div>
+
+                <div className="teachers-item">
+                  <img
+                    src={TeacherFour}
+                    alt="Teacher-img"
+                    width={346}
+                    height={402}
+                  />
+                  <p className="teachers-name">Muslimbek Pirnazarov</p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">Dean of
+                    Information Technologies faculty</p>
+                </div>
+
+                <div className="teachers-item">
+                  <img
+                    src={TeacherTree}
+                    alt="Teacher-img"
+                    width={346}
+                    height={402}
+                  />
+                  <p className="teachers-name">Murad Ismailov </p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">Dean of English Teaching
+                    faculty</p>
                 </div>
               </div>
             </Marquee>
@@ -772,8 +805,8 @@ const Home = () => {
             </div>
             <div className="footer-right">
               <p className="footer-text">Elektron pochta orqali murojaat qiling</p>
-              <a className="footer-desc" href="#">
-                millatumidi@mail.ru
+              <a className="footer-desc" href="mailto:ciu.registrar@cambridge.uz">
+                ciu.registrar@cambridge.uz
               </a>
             </div>
           </div>
