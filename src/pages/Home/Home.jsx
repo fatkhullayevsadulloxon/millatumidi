@@ -252,7 +252,7 @@ const Home = () => {
             <div className="wrapper">
               <iframe
                 className="youtube-video"
-                src="https://www.youtube.com/embed/4c2NLApM7co?si=Qz6xrCnGP9dQCDW6"
+                src="https://www.youtube.com/embed/dkqziB5sxY0?si=sDzpnMszVQsEAYjy"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -473,6 +473,41 @@ const Home = () => {
               initialSlide={2}
               Swiper
               slidesPerView={2}
+              spaceBetween={2}
+              centeredSlides={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+              style={{ paddingBottom: "50px" }}
+            >
+              {youtubeVideo.map(item => (
+                <SwiperSlide style={{ padding: "20px" }} key={item.id}>
+                  <iframe style={{
+                    width: "100%",
+                    height: "493px",
+                    borderRadius: "20px",
+                  }} src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <div className="video-slider-btn-box">
+              <button onClick={handlePrev} className="video-slider-btn">
+                <MdNavigateBefore size={30} />
+              </button>
+              <button onClick={handleNext} className="video-slider-btn">
+                <MdNavigateNext size={30} />
+              </button>
+            </div>
+          </div>
+          <div className="custom-swipper2">
+            <Swiper
+              ref={sliderRef}
+              initialSlide={2}
+              Swiper
+              slidesPerView={1}
               spaceBetween={2}
               centeredSlides={true}
               pagination={{
