@@ -96,6 +96,29 @@ const Home = () => {
     }
   };
 
+  const youtubeVideo = [
+    {
+      url: "https://www.youtube.com/embed/UtpsxyGwgKc?si=u7inM9aOUwtYbsjP",
+      id: 1
+    },
+    {
+      url: "https://www.youtube.com/embed/Sy1ANPMaDhg?si=yunCG5390XDeCi-L",
+      id: 2
+    },
+    {
+      url: "https://www.youtube.com/embed/STvsdAwNQ-4?si=nQ87JwshX9--92Wc",
+      id: 3
+    },
+    {
+      url: "https://www.youtube.com/embed/xLfhq51A5aw?si=cFe7hkwpkRIrKuYF",
+      id: 4
+    },
+    {
+      url: "https://www.youtube.com/embed/6ZvnreLgPYQ?si=fkjOp6MyYSzMxcJs",
+      id: 5
+    },
+  ]
+
   return (
     <div>
       <div className="hero-bg">
@@ -110,19 +133,19 @@ const Home = () => {
           </div>
 
           <div className="header-middle">
-            <a className="header-middle-link" href="#">
+            <a className="header-middle-link" href="#about">
               Biz haqimizda{" "}
             </a>
-            <a className="header-middle-link" href="#">
+            <a className="header-middle-link" href="#programs">
               Dasturlar
             </a>
-            <a className="header-middle-link" href="#">
+            <a className="header-middle-link" href="#comment">
               Fikrlar
             </a>
-            <a className="header-middle-link" href="#">
+            <a className="header-middle-link" href="#grants">
               Grantlar
             </a>
-            <a className="header-middle-link" href="#">
+            <a className="header-middle-link" href="#teachers">
               Ustozlarimiz
             </a>
           </div>
@@ -162,25 +185,25 @@ const Home = () => {
               id="offcanvasRight"
               aria-labelledby="offcanvasRightLabel"
             >
-                <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
 
               <div class="offcanvas-body">
                 <div className="header-middle1">
-                  <a className="header-middle-link" href="#">
+                  <a className="header-middle-link" href="#about">
                     Biz haqimizda{" "}
                   </a>
-                  <a className="header-middle-link" href="#">
+                  <a className="header-middle-link" href="#programs">
                     Dasturlar
                   </a>
-                  <a className="header-middle-link" href="#">
+                  <a className="header-middle-link" href="#comment">
                     Fikrlar
                   </a>
-                  <a className="header-middle-link" href="#">
+                  <a className="header-middle-link" href="#grants">
                     Grantlar
                   </a>
-                  <a className="header-middle-link" href="#">
+                  <a className="header-middle-link" href="#teachers">
                     Ustozlarimiz
                   </a>
                 </div>
@@ -202,8 +225,12 @@ const Home = () => {
               </p>
 
               <div className="hero-left-box">
-                <img className="hero-left-img" src={BtnHero} alt="" />
-                <img className="hero-left-img" src={BtnHeroTwo} alt="" />
+                <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                  <img className="hero-left-img" src={BtnHero} alt="" />
+                </a>
+                <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                  <img className="hero-left-img" src={BtnHeroTwo} alt="" />
+                </a>
               </div>
             </div>
 
@@ -237,7 +264,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="faculties">
+        <section className="faculties" id="programs">
           <div>
             <div>
               <h3 className="faculties-title">Bizning fakultetlarimiz</h3>
@@ -260,7 +287,9 @@ const Home = () => {
                       Dasturiy ta'minot muhandislari keng ko'lamli, murakkab
                       dasturiy ta'minot infratuzilmalarini ishlab chiqadilar ...
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
 
@@ -279,7 +308,9 @@ const Home = () => {
                       40 yildan ortiq muvaffaqiyatli o'qitish tajribasiga ega
                       bo'lgan bizning BTEC International Business Level 3 ...
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
 
@@ -296,7 +327,9 @@ const Home = () => {
                       2023-yilda talabalarga tillar va turdosh fanlarni
                       o‘rgatish sohasida zarur ko‘nikma va bilimlarni ...
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
 
@@ -315,7 +348,9 @@ const Home = () => {
                       Fakultetimiz talabalarga ACCA imtihonlarini topshirish va
                       to‘qqizta asosiy sertifikat olish imkonini beruvchi
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
 
@@ -334,7 +369,9 @@ const Home = () => {
                       “Xalqaro biznes” fakulteti negizida faoliyat yurituvchi
                       “Biznes menejmenti” kursi talabalarga mulk...{" "}
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
                 <div className="faculties-item">
@@ -352,7 +389,9 @@ const Home = () => {
                       Dasturiy ta'minot muhandislari keng ko'lamli, murakkab
                       dasturiy ta'minot infratuzilmalarini ishlab chiqadilar ...
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
 
@@ -371,18 +410,22 @@ const Home = () => {
                       40 yildan ortiq muvaffaqiyatli o'qitish tajribasiga ega
                       bo'lgan bizning BTEC International Business Level 3 ...
                     </p>
-                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                      <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                    </a>
                   </div>
                 </div>
               </div>
             </Marquee>
             <div className="faculties-student-box">
-              <img className="faculties-student-btn" src={BtnHero} alt="" />
+              <a href="https://admission.millatumidi.uz/?refid=newsite">
+                <img className="faculties-student-btn" src={BtnHero} alt="" />
+              </a>
             </div>
           </div>
         </section>
 
-        <section className="about">
+        <section className="about" id="about">
           <div className="about-wrapper container">
             <div className="about-left">
               <img
@@ -415,12 +458,14 @@ const Home = () => {
                 hayotda o‘z yo‘lini tanlash uchun keng imkoniyatlarni taqdim
                 etadi.
               </p>
-              <img className="about-btn" src={BtnHero} alt="" />
+              <a href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                <img className="about-btn" src={BtnHero} alt="" />
+              </a>
             </div>
           </div>
         </section>
 
-        <section style={{ paddingTop: "20px" }}>
+        <section style={{ paddingTop: "20px" }} id="comment">
           <h3 className="faculties-title-2">O’quvchilarimizdan fikrlar</h3>
           <div className="custom-swipper">
             <Swiper
@@ -437,62 +482,13 @@ const Home = () => {
               className="mySwiper"
               style={{ paddingBottom: "50px" }}
             >
-              {Array.from({ length: 10 }).map((_, index) => (
-                <SwiperSlide style={{ padding: "20px" }} key={index}>
-                  <iframe
-                    style={{
-                      width: "100%",
-                      height: "493px",
-                      borderRadius: "20px",
-                    }}
-                    className="youtube-iframe"
-                    src="https://www.youtube.com/embed/AnVO_pFyz7o?si=8VOZgaj_GabUnM7k"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <div className="video-slider-btn-box">
-              <button onClick={handlePrev} className="video-slider-btn">
-                <MdNavigateBefore size={30} />
-              </button>
-              <button onClick={handleNext} className="video-slider-btn">
-                <MdNavigateNext size={30} />
-              </button>
-            </div>
-          </div>
-          <div className="custom-swipper2">
-            <Swiper
-              ref={sliderRef}
-              initialSlide={2}
-              Swiper
-              slidesPerView={1}
-              spaceBetween={2}
-              centeredSlides={true}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-              style={{ paddingBottom: "50px" }}
-            >
-              {Array.from({ length: 10 }).map((_, index) => (
-                <SwiperSlide style={{ padding: "20px" }} key={index}>
-                  <iframe
-                    style={{
-                      width: "100%",
-                      height: "493px",
-                      borderRadius: "20px",
-                    }}
-                    className="youtube-iframe"
-                    src="https://www.youtube.com/embed/AnVO_pFyz7o?si=8VOZgaj_GabUnM7k"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
+              {youtubeVideo.map(item => (
+                <SwiperSlide style={{ padding: "20px" }} key={item.id}>
+                  <iframe style={{
+                    width: "100%",
+                    height: "493px",
+                    borderRadius: "20px",
+                  }} src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -508,7 +504,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="grants">
+        <section className="grants" id="grants">
           <div className="container">
             <div className="grants-box">
               <h2 className="grants-title">Grantlarimiz</h2>
@@ -556,12 +552,14 @@ const Home = () => {
               </div>
             </div>
             <div className="grants-btns">
-              <img className="grants-btn" src={BtnHero} alt="" />
+              <a style={{ display: 'flex', justifyContent: 'center' }} href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+                <img className="about-btn" src={BtnHero} alt="" />
+              </a>
             </div>
           </div>
         </section>
 
-        <section className="teachers">
+        <section className="teachers" id="teachers">
           <div className="">
             <div className="teachers-box">
               <h2 className="teachers-title">
@@ -578,10 +576,9 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Yoqub</p>
-                  <p className="teachers-lastname">Usmonov</p>
+                  <p className="teachers-name">Ishmanova Dinara</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                  <p className="teacher-skills">Doctor of Philosophy in Economical Science</p>
                 </div>
 
                 <div className="teachers-item">
@@ -591,10 +588,9 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Ramziddin</p>
-                  <p className="teachers-lastname">Nurmahammatov</p>
+                  <p className="teachers-name">Murad Ismailov</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                  <p className="teacher-skills">Dean of English Language Teaching Faculty</p>
                 </div>
 
                 <div className="teachers-item">
@@ -604,10 +600,9 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Nodir</p>
-                  <p className="teachers-lastname">Ismailov</p>
+                  <p className="teachers-name">Mr. Muhtor Bekmuratov</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                  <p className="teacher-skills">Dean of Applied Accounting and Finance Faculty</p>
                 </div>
 
                 <div className="teachers-item">
@@ -617,10 +612,9 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Behruz </p>
-                  <p className="teachers-lastname">Ismailov</p>
+                  <p className="teachers-name">Prof. PhD Galina Pan </p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                  <p className="teacher-skills">Dean of International Business Faculty</p>
                 </div>
                 <div className="teachers-item">
                   <img
@@ -629,10 +623,9 @@ const Home = () => {
                     width={346}
                     height={402}
                   />
-                  <p className="teachers-name">Yoqub</p>
-                  <p className="teachers-lastname">Usmonov</p>
+                  <p className="teachers-name">Muslimbek Pirnazarov</p>
                   <span className="teacher-job">Kasbi:</span>
-                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                  <p className="teacher-skills">Dean of Information Technologies Faculty</p>
                 </div>
 
                 <div className="teachers-item">
@@ -692,7 +685,7 @@ const Home = () => {
               <div className="university-item">
                 <div className="university-bor">
                   <h3 className="university-text">Ulkan motivatsiya
-</h3>
+                  </h3>
                   <p className="university-desc">
                     18 ta amaliy va nazariy darslar CV yozish haqidagi dars JOB
                     interview ga ega bo’lasiz
@@ -703,7 +696,7 @@ const Home = () => {
               <div className="university-item">
                 <div className="university-bor">
                   <h3 className="university-text">Yuqori kreativlik
-</h3>
+                  </h3>
                   <p className="university-desc">
                     18 ta amaliy va nazariy darslar CV yozish haqidagi dars JOB
                     interview ga ega bo’lasiz
@@ -714,7 +707,7 @@ const Home = () => {
               <div className="university-item">
                 <div className="university-bor">
                   <h3 className="university-text">Ishtiyoq
-</h3>
+                  </h3>
                   <p className="university-desc">
                     18 ta amaliy va nazariy darslar CV yozish haqidagi dars JOB
                     interview ga ega bo’lasiz
@@ -722,6 +715,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <a style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }} href="https://admission.millatumidi.uz/?refid=newsite" target="_blank">
+              <img className="about-btn" src={BtnHero} alt="" />
+            </a>
           </div>
         </section>
 
@@ -733,9 +729,8 @@ const Home = () => {
                 {frequentlyAskQuestions.map((item, i) => (
                   <div key={i} className="border-orange-400 mb-1">
                     <div
-                      className={`px-5 py-3 flex cursor-pointer items-center justify-between questions-bor ${
-                        activeId === i ? "bg-gray-100" : ""
-                      }`}
+                      className={`px-5 py-3 flex cursor-pointer items-center justify-between questions-bor ${activeId === i ? "bg-gray-100" : ""
+                        }`}
                       onClick={() => togglerFunction(i)}
                     >
                       <p className="flex-1 questions-text">{item.title}</p>
@@ -748,11 +743,10 @@ const Home = () => {
                       </span>
                     </div>
                     <div
-                      className={`transition-max-height duration-500 ease-in-out ${
-                        activeId === i
-                          ? "max-h-screen"
-                          : "max-h-0 overflow-hidden"
-                      }`}
+                      className={`transition-max-height duration-500 ease-in-out ${activeId === i
+                        ? "max-h-screen"
+                        : "max-h-0 overflow-hidden"
+                        }`}
                     >
                       <div className="px-5 py-4">
                         <p>{item.description}</p>
@@ -776,15 +770,8 @@ const Home = () => {
                 +998 (71) 200-03-06
               </a>
             </div>
-
-            <div className="footer-middle">
-              <p className="footer-text">Savolingizni yozing</p>
-              <span className="footer-line"></span>
-              <span className="footer-line"></span>
-            </div>
-
             <div className="footer-right">
-              <p className="footer-text">poctadan murojat qiling</p>
+              <p className="footer-text">Elektron pochta orqali murojaat qiling</p>
               <a className="footer-desc" href="#">
                 millatumidi@mail.ru
               </a>

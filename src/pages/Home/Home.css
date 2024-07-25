@@ -6,7 +6,7 @@
   padding: 0 20px;
 }
 
-.button-hamburger{
+.button-hamburger {
   display: none;
 }
 
@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.header-middle1{
+.header-middle1 {
   display: block !important;
 }
 
@@ -36,6 +36,7 @@
   font-size: 20px;
   line-height: 24.26px;
   display: block;
+  transition: all 0.4s;
 }
 
 .header-middle-link:hover {
@@ -43,13 +44,13 @@
 }
 
 @media only screen and (max-width: 1037px) {
-    .header-middle{
-      display: none !important;
-    }
+  .header-middle {
+    display: none !important;
+  }
 
-    .button-hamburger{
-      display: block !important;
-    }
+  .button-hamburger {
+    display: block !important;
+  }
 }
 
 /* .header-middle-link:nth-child(1) {
@@ -65,13 +66,15 @@
   padding-right: 17px;
   font-weight: 400;
   font-size: 14px;
-  font-weight: 17.33px;
+  line-height: 17.33px;
+  font-weight: bold;
+  font-family: Gilroy-Bold;
 }
 
 @media only screen and (max-width: 700px) {
-    .header-right-number{
-      display: none !important;
-    }
+  .header-right-number {
+    display: none !important;
+  }
 }
 
 .header-right-box {
@@ -101,12 +104,12 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .hero-wrapper{
+  .hero-wrapper {
     display: block !important;
   }
 }
 
-.hero-left{
+.hero-left {
   max-width: 559px !important;
 }
 
@@ -138,12 +141,13 @@
   display: flex;
   align-items: center;
   margin-left: -26px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 550px) {
-    .hero-left-box{
-      display: block !important;
-    }
+  .hero-left-box {
+    display: block !important;
+  }
 }
 
 .hero-left-img {
@@ -193,35 +197,35 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .youtube-video{
+  .youtube-video {
     width: 900px !important;
   }
 }
 
 @media only screen and (max-width: 974px) {
-  .youtube-video{
+  .youtube-video {
     width: 600px !important;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .youtube-video{
+  .youtube-video {
     width: 500px !important;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .youtube-video{
+  .youtube-video {
     width: 100% !important;
   }
 }
 
-.gradient-top{
+.gradient-top {
   position: absolute;
   top: 0;
 }
 
-.wrapper{
+.wrapper {
   position: relative;
 }
 
@@ -251,14 +255,18 @@
   line-height: 55.3px;
   margin-top: 70px;
   margin-bottom: -160px;
+  position: relative;
+  z-index: 999999;
 }
 
-.faculties-title-2{
+.faculties-title-2 {
   font-family: Belleza;
   text-align: center;
   font-weight: 400;
   font-size: 48px;
   line-height: 55.3px;
+  position: relative;
+  z-index: 999999;
 }
 
 .faculties-item {
@@ -348,7 +356,7 @@
 
 /* About */
 
-.about{
+.about {
   margin-top: 200px;
   margin-bottom: 160px;
 }
@@ -361,20 +369,25 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .about-wrapper{
+  .about-wrapper {
     display: block;
   }
-  .about-img-one, .about-img-two, .about-img-tree {
+
+  .about-img-one,
+  .about-img-two,
+  .about-img-tree {
     position: relative;
   }
 
-  .about-title{
+  .about-title {
     padding-top: 500px;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .about-img-two, .about-img-tree {
+
+  .about-img-two,
+  .about-img-tree {
     display: none;
   }
 
@@ -383,7 +396,7 @@
     margin-left: 80px;
   }
 
-  .about-title{
+  .about-title {
     padding-top: 300px;
   }
 }
@@ -442,7 +455,7 @@
   object-fit: cover;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: #F5B230 !important;
 }
 
@@ -456,7 +469,7 @@
 
 /* grants */
 
-.header-right-sel{
+.header-right-sel {
   background-color: transparent;
 }
 
@@ -563,6 +576,7 @@
   font-weight: 400;
   font-size: 31px;
   line-height: 41.98px;
+  max-width: 200px;
 }
 
 .teachers-lastname {
@@ -613,6 +627,7 @@
   line-height: 46.08px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 20px !important;
 }
 
 .university-box {
@@ -622,6 +637,7 @@
   gap: 45px;
   flex-wrap: wrap;
 }
+
 .university-item {
   background-image: url('../../assets/images/bg-1.png');
   background-repeat: no-repeat;
@@ -630,19 +646,23 @@
   height: 241px;
 }
 
-.university-item:nth-child(2){
+.university-item:nth-child(2) {
   background-image: url('../../assets/images/bg-2.png');
 }
-.university-item:nth-child(3){
+
+.university-item:nth-child(3) {
   background-image: url('../../assets/images/bg-3.png');
 }
-.university-item:nth-child(4){
+
+.university-item:nth-child(4) {
   background-image: url('../../assets/images/bg-4.png');
 }
-.university-item:nth-child(5){
+
+.university-item:nth-child(5) {
   background-image: url('../../assets/images/bg-5.png');
 }
-.university-item:nth-child(6){
+
+.university-item:nth-child(6) {
   background-image: url('../../assets/images/bg-6.png');
 }
 
@@ -721,7 +741,7 @@
 /* footer */
 
 .footer-title {
-  font-family: Gilroy-Medium;
+  font-family: Belleza;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -737,14 +757,14 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .footer-wrapper{
-      display: block !important;
-    }
+  .footer-wrapper {
+    display: block !important;
+  }
 }
 
 
 @media only screen and (max-width: 500px) {
-  .footer-wrapper{
+  .footer-wrapper {
     margin-left: 30px;
   }
 }
@@ -778,18 +798,19 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 44.58px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-desc::before {
-  position: absolute;
-  display: inline-block;
   content: "";
+  display: inline-block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #F5B230;
-  left: -24px;
-  top: 17px;
+  left: -18px;
+  position: absolute;
 }
 
 .footer-line {
@@ -802,7 +823,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .footer-desc{
+  .footer-desc {
     font-size: 24px !important;
   }
 }
@@ -831,18 +852,18 @@
   color: #fff;
 }
 
-.hero-bg{
+.hero-bg {
   background-image: url('../../assets/images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 120px;
 }
 
-.grants-middle{
+.grants-middle {
   max-width: 334px;
 }
 
-.grants-right{
+.grants-right {
   max-width: 334px;
 }
 
@@ -850,19 +871,20 @@
   font-family: Gilroy-Medium;
 }
 
-.custom-swipper{
+.custom-swipper {
   display: block !important;
 }
-.custom-swipper2{
+
+.custom-swipper2 {
   display: none !important;
 }
 
 @media only screen and (max-width: 550px) {
-    .custom-swipper{
-      display: none !important;
-    }
+  .custom-swipper {
+    display: none !important;
+  }
 
-    .custom-swipper2{
-      display: block !important;
-    }
+  .custom-swipper2 {
+    display: block !important;
+  }
 }
